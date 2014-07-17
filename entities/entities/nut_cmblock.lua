@@ -55,7 +55,7 @@ if (SERVER) then
 			return
 		end
 
-		if (!activator:IsCombine() and activator:Team() != FACTION_ADMIN) then
+		if (!activator:IsCombine() and activator:Team() != FACTION_ADMIN and activator:Team() != FACTION_CIVILWORKER) then
 			self:Error()
 
 			return
